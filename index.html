@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Live W&H</title>
+	</head>
+	<body class="teal lighten-2 white-text lighten-5 container">
+		<main>
+			<span>Inner width:</span>
+			<span id="innerWidth">0</span>
+			<br />
+			<span>Inner height:</span>
+			<span id="innerHeight">0</span>
+			<br />
+			<span>Outer width:</span>
+			<span id="outerWidth">0</span>
+			<br />
+			<span>Outer height:</span>
+			<span id="outerHeight">0</span>
+			<br />
+		</main>
+	</body>
+	<!-- Applying internal CSS -->
+	<style>
+		body {
+			color: #173f5f;
+			background-color: #3caea3;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 5vw;
+		}
+		main {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		/* Using media queries to change the font size */
+		/* On screens that are 992px wide or less*/
+		@media screen and (max-width: 992px) {
+			body {
+				font-size: 5vw;
+			}
+		}
+
+		/* On screens that are 600px wide or less */
+		@media screen and (max-width: 600px) {
+			body {
+				font-size: 30px;
+			}
+		}
+	</style>
+	<script src="app.js"></script>
+</html>
